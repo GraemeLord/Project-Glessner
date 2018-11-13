@@ -47,6 +47,9 @@ ModelImporter:
     100082: group14_group13
     100084: group14_pCube30
     100086: pCube29_group14
+    100088: group6_pCube68
+    100090: pasted__pCylinder6
+    100092: pCube65_group6
     400000: //RootNode
     400002: group13
     400004: group5_pCube26
@@ -91,6 +94,9 @@ ModelImporter:
     400082: group14_group13
     400084: group14_pCube30
     400086: pCube29_group14
+    400088: group6_pCube68
+    400090: pasted__pCylinder6
+    400092: pCube65_group6
     2100000: initialShadingGroup
     2100002: blinn1SG
     2300000: group13
@@ -136,6 +142,9 @@ ModelImporter:
     2300080: group14_group13
     2300082: group14_pCube30
     2300084: pCube29_group14
+    2300086: group6_pCube68
+    2300088: pasted__pCylinder6
+    2300090: pCube65_group6
     3300000: group13
     3300002: group5_pCube26
     3300004: group5_pCube27
@@ -179,6 +188,9 @@ ModelImporter:
     3300080: group14_group13
     3300082: group14_pCube30
     3300084: pCube29_group14
+    3300086: group6_pCube68
+    3300088: pasted__pCylinder6
+    3300090: pCube65_group6
     4300000: group13
     4300002: group5_pCube26
     4300004: group5_pCube27
@@ -222,6 +234,9 @@ ModelImporter:
     4300080: group14_group13
     4300082: group14_pCube30
     4300084: pCube29_group14
+    4300086: group6_pCube68
+    4300088: pasted__pCylinder6
+    4300090: pCube65_group6
   externalObjects: {}
   materials:
     importMaterials: 1
