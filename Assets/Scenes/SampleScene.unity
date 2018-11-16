@@ -438,7 +438,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 337033171}
+  - component: {fileID: 337033173}
   - component: {fileID: 337033172}
+  - component: {fileID: 337033174}
   m_Layer: 0
   m_Name: Camera Focus
   m_TagString: Untagged
@@ -452,14 +454,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 337033170}
-  m_LocalRotation: {x: 0.23911765, y: -0.3696438, z: 0.09904577, w: 0.89239913}
-  m_LocalPosition: {x: -0.62, y: 0, z: -1.977}
+  m_LocalRotation: {x: 0.23960136, y: -0.36933047, z: 0.09787746, w: 0.892528}
+  m_LocalPosition: {x: -0.88, y: -0.376, z: -1.701}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1612888755}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 30.000002, y: -45, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: -45, z: -0.15}
 --- !u!114 &337033172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,9 +470,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 337033170}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58720e1c06facaa45a6bffe8f3f0749a, type: 3}
+  m_Script: {fileID: 11500000, guid: 072bf89d66d2ddc49957d74ae5d7befd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldown: 1
+  spinDuration: 10
+--- !u!114 &337033173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 337033170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c5a34cddbe9aa4693bd4cd01bdb3c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+--- !u!114 &337033174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 337033170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 205a8838508bf954baec92be719f7ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxRotation: 10
+  degreesPerSecond: 15
 --- !u!1 &370221916
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,7 +2573,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.13
+  orthographic size: 3
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
