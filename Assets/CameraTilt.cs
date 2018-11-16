@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/*
+ * 
+ */
 public class CameraTilt : MonoBehaviour
 {
     public float forwardMaxRotation;
@@ -11,7 +14,7 @@ public class CameraTilt : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKey(KeyCode.W))
+        if(Input.GetKey(KeyCode.UpArrow))
         {
             rotation += Time.deltaTime * degreesPerSecond;
             if(rotation > forwardMaxRotation)
@@ -20,7 +23,7 @@ public class CameraTilt : MonoBehaviour
             }
         }
 
-        if(Input.GetKey(KeyCode.S))
+        if(Input.GetKey(KeyCode.DownArrow))
         {
             rotation -= Time.deltaTime * degreesPerSecond;
             if(rotation < -backwardMaxRotation)
