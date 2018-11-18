@@ -3,6 +3,10 @@ using UnityEngine.Events;
 
 public abstract class Clickable : MonoBehaviour
 {
+    // Debug
+    public string id;
+
+    // Flags
     public bool isToggle = false;
     private bool isOn = false;
 

@@ -34,15 +34,10 @@ public class CameraSpin : MonoBehaviour
         // Rotate towards target
         float currentY = Mathf.LerpAngle(transform.rotation.eulerAngles.y, target.eulerAngles.y, t);
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, currentY, transform.rotation.eulerAngles.z);
-        //transform.rotation = Quaternion.Lerp(transform.rotation, target, t);
 	}
 
     private void CheckForInput()
     {
-        // Increment timers
-        t += Time.deltaTime / spinDuration;
-        cooldownTimer += Time.deltaTime;
-
         // If cooldown timer has passed the necessary cooldown
         if(cooldownTimer > cooldown)
         {
@@ -64,5 +59,9 @@ public class CameraSpin : MonoBehaviour
                 cooldownTimer = 0.0f;
             }
         }
+
+        // Increment timers
+        t += Time.deltaTime / spinDuration;
+        cooldownTimer += Time.deltaTime;
     }
 }
