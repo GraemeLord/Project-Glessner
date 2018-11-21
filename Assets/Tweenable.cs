@@ -53,7 +53,9 @@ public class Tweenable : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Vector2 size = GetComponent<RectTransform>().rect.size;
+        Vector3[] corners = new Vector3[4];
+        GetComponent<RectTransform>().GetWorldCorners(corners);
+        Vector2 size = new Vector2(corners[3].x - corners[0].x, corners[1].y - corners[0].y);
 
         // Calculate points in advance if the application is not running
         if(!Application.isPlaying)

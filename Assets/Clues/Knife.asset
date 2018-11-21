@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Knife
   type: {fileID: 11400000, guid: 1840a52ccbb68d447a71bafa9eda9aee, type: 2}
-  image: {fileID: 21300000, guid: ba3dd167860e8d54b9eed9c3dc1faf4d, type: 3}
+  image: {fileID: 21300000, guid: 31b0d2ad49b974b47a994d364296850f, type: 3}
   correctDescription: Correct. This is in fact a knife.
   incorrectDescription: Incorrect. That's not a knoife.
